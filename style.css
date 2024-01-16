@@ -1,0 +1,179 @@
+body {
+    margin: 0px;
+    transition: ease-in-out 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.conatiner {
+    display: flex;
+}
+
+.left {
+    float: left;
+    width: 30%;
+    position: fixed;
+    padding: 20px;
+}
+
+.left h1 {
+    letter-spacing: 0.5px;
+}
+
+.leftbottom .tercondi a {
+    color: black;
+    font-size: 16px;
+}
+
+.containerfloat {
+    position: relative;
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    max-height: 100vh;
+    position: absolute;
+    left: 30%;
+    padding-top: 30px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    transition: ease-in-out 2s;
+}
+
+
+/* Hide scrollbar for chrome, safari, and Opera */
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide Scrollbar for IE, Edge and Firefox */
+.menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+data-bg-color {
+    transition: 5s ease-in-out;
+}
+
+.card .black a {
+    color: #e568ac !important;
+
+}
+
+.card {
+    height: 100vh;
+    padding-top: 50px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.card .text a {
+    color: white;
+    font-weight: bold;
+}
+
+
+.aside {
+    float: right;
+    width: 20%;
+    position: fixed;
+    left: 80%;
+    padding-top: 45px;
+}
+
+.aside a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.asidebottom h3 {
+    color: black;
+    text-decoration: none;
+}
+
+.leftbottom {
+    margin-top: 55vh;
+    font-size: 20px;
+}
+
+.asidebottom {
+    margin-top: 48vh;
+    text-align: right;
+    padding-right: 20px;
+}
+@media (max-width: 1250px) {
+    .leftbottom {
+        margin-top: 50vh;
+        font-size: 16px;
+    }
+    .asidebottom {
+        margin-top: 40vh;
+        text-align: right;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 850px) {
+
+    .left,
+    .menu,
+    .aside {
+        float: none;
+        width: 100%;
+        height: auto;
+        position: static;
+        overflow: visible;
+        padding: 0px;
+    }
+
+    .menu {
+        left: 0px;
+    }
+    .left {
+        padding: 20px;
+    }
+    .leftbottom {
+        margin-top: 0vh;
+        font-size: 20px;
+
+    }
+
+    .asidebottom, .aside a  {
+        margin-top: 0vh;
+        display: none;
+    }
+    .card {
+        word-wrap: break-word;
+        height: auto;
+        padding: 50px 20px 50px 20px;
+        scroll-snap-align: start;
+        text-align: center;
+    }
+    .container {
+        padding-bottom: 8.33%;
+    }
+}
+/* Privacy policy page Style CSS */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerprivacy {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.containerprivacy h2 {
+    padding-bottom: 20px;
+}
+@media (max-width: 850px) {
+    .containerprivacy {
+        width: 95%;
+    }
+}
